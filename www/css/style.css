@@ -1,1 +1,80 @@
 /* Empty. Add your own CSS if you like */
+
+.item-text-wrap p {
+    text-align: justify;
+    margin: 0;
+    font-size:16px;
+}
+
+.item-text-wrap{
+    margin-bottom: 35px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: arial;
+}
+
+.info-edicao {
+    font-size: small;
+    text-align: right;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+#subtitulo {
+    font-size: small;
+    text-align: right;
+}
+
+.autor {
+    text-align: right;
+    margin: 10px 15px 10px 10px !important;
+}
+
+#texto {
+    font-size: small;
+}
+
+.titulo {
+    font-size: 18px;
+    font-family: arial;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.capa-informacao p {
+    color: #000;
+    position: relative;
+    bottom: 20px;
+    background: #ccc;
+    padding: 5px 0;
+}
+
+#autorComportamento {
+    font-size: 10pt;
+    text-align: left;
+}
+
+#descricaoAutorComportamento {
+    font-size: 7pt;
+    text-align: left;
+}
+
+#tituloTexto {
+    font-size: large;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.imagemIndicador {
+    float: right !important;
+    height: 123px !important;
+}

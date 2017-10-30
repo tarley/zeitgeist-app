@@ -1,0 +1,15 @@
+<ion-view view-title="Zeitgeist" ng-init="init()">
+    
+    <ion-slides options="options" slider="data.slider" >
+        <ion-slide-page ng-repeat="p in jornal.paginas">
+            <ion-content >
+                <div ng-if="p.desc_template == 'Capa'" ng-include src="'templates/_template1.html'"></div>
+                <div ng-if="p.desc_template == 'Editorial'" ng-include src="'templates/_template2.html'"></div>
+                <div ng-if="p.desc_template == 'Texto Aluno(a)'" ng-include src="'templates/_template3.html'"></div>
+                <div ng-if="p.desc_template == 'Comportamento'" ng-include src="'templates/_template4.html'"></div>
+                <div ng-if="p.desc_template == 'Fale-me mais sobre'" ng-include src="'templates/_template5.html'"></div>
+                <div ng-if="p.desc_template == 'O Indicador'" ng-include src="'templates/_template6.html'"></div>
+            </ion-content>
+        </ion-slide-page>
+    </ion-slides>
+</ion-view>
