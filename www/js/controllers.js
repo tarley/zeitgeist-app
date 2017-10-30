@@ -10,7 +10,7 @@ angular.module('starter.controllers', [])
     .controller('HomeController', function($scope, $http){
         
         $scope.init = function(){
-            $http.get("https://appweb-tarley.c9users.io/api/jornal/listToApp/", { params: {} })
+            $http.get("https://www.jornalzeitgeist.com.br/api/jornal/listToApp/", { params: {} })
             .success(function(resposta){
                 console.log(resposta);
                 $scope.jornal = resposta.data;
