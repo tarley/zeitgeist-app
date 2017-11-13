@@ -1,13 +1,60 @@
-<div class="">
-    <div class="item item-body no-padding">
-        <h2 class="titulo">{{p.desc_template}}</h2>
-        <img class="full-image" src="{{p.metadados.imagem}}" />
+<!-- 5 metadados (imagem, nome_pagina, titulo_texto, texto, autor_texto) - Nome template: Texto simples com imagem -->
 
-        <h3 class="autor">
-            {{p.metadados.autor}}
-        </h3>
-        <div class="item item-text-wrap">
-            <p>{{p.metadados.texto}}</p>
-        </div>
-    </div>
-</div>
+<h1>{{p.nome_pagina}}</h1>
+
+<ion-card>
+    <img src="{{p.metadados.imagem}}" />
+    
+    <ion-card-content>
+        <ion-card-title>
+            {{p.metadados.titulo_texto}}
+        </ion-card-title>
+        <p>
+            {{p.metadados.texto}}
+        </p>
+        <p>
+            {{p.metadados.autor_texto}}
+        </p>
+    </ion-card-content>
+</ion-card>
+
+
+
+<ion-card>
+  <ion-card-header>
+    Explore Nearby
+  </ion-card-header>
+
+  <ion-list>
+    <button ion-item>
+      <ion-icon name="cart" item-start></ion-icon>
+      Shopping
+    </button>
+
+    <button ion-item>
+      <ion-icon name="medical" item-start></ion-icon>
+      Hospital
+    </button>
+
+    <button ion-item>
+      <ion-icon name="cafe" item-start></ion-icon>
+      Cafe
+    </button>
+
+    <button ion-item>
+      <ion-icon name="paw" item-start></ion-icon>
+      Dog Park
+    </button>
+
+    <button ion-item>
+      <ion-icon name="beer" item-start></ion-icon>
+      Pub
+    </button>
+
+    <button ion-item>
+      <ion-icon name="planet" item-start></ion-icon>
+      Space
+    </button>
+
+  </ion-list>
+</ion-card>

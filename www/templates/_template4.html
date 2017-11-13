@@ -1,13 +1,22 @@
+<!-- 6 metadados (imagem, nome_pagina, autor_texto, desc_autor, titulo_texto, texto) - 
+Nome Template: Texto simples com imagem e detalhamento de autor -->
+
 <div class="list card">
     <div class="item item-body">
-        
-        <h2 id="tituloComportamento">{{p.desc_template}}</h2>
-        <h2 id="tituloComportamento">{{p.metadados.titulo_comportamento}}</h2>
-        
-        <div id="texto" class="item item-text-wrap">
-            {{p.metadados.texto_comportamento}}
+
+        <div class="item item-image">
+            <img src="{{p.metadados.imagem}}" />
         </div>
-         <h3 id="autorComportamento">{{p.metadados.autor_comportamento}}</h3>
-        <h3 id="descricaoAutorComportamento">{{p.metadados.descricao_autor_comportamento}}</h3>
+
+        <h2>{{p.nome_pagina}}</h2>
+        
+        <h2>{{p.autor_texto}}</h2>
+        
+        <h2>{{p.desc_autor}}</h2>
+        
+        <h2>{{p.titulo_texto}}</h2>
+        
+        <p>{{p.texto}}</p>
+
     </div>
 </div>

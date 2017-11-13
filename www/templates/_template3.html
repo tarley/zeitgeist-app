@@ -1,11 +1,17 @@
+<!-- 5 metadados (titulo, nome_jornal, desc_produtores, contato, logo_instituicao) - Nome Template: expediente -->
+
 <div class="item item-body">
 
-    <h2 class="titulo">{{p.desc_template}}</h2>
+    <h2>{{p.metadados.titulo}}</h2>
 
-    <h3 id="autorComportamento">{{p.metadados.nome_aluno}}</h3>
-    <h3 id="descricaoAutorComportamento">{{p.metadados.descricao_aluno}}</h3>
-    <h1 id="tituloTexto">{{p.metadados.titulo}}</h1>
-    <div id="texto" class="item item-text-wrap">
-        {{p.metadados.texto}}
+    <h3>{{p.metadados.nome_jornal}}</h3>
+
+    <h3>{{p.metadados.desc_produtores}}</h3>
+
+    <h3>{{p.metadados.contato}}</h3>
+
+    <div class="item item-image">
+        <img src="{{p.metadados.logo_instituicao}}" />
     </div>
+
 </div>

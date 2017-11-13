@@ -1,42 +1,18 @@
+<!-- 5 metadados (nome_pagina, titulo_texto, texto1, texto2, autor_texto) - Nome Template: Texto duplo sem imagem -->
 
-
-
-<div class="item item-body">
-    <h2 class="titulo">{{p.desc_template}}</h2>
+<div class="item item-text-wrap">
+    <p>{{p.metadados.nome_pagina}}</p>
 </div>
 
-<div class="list">
+<div>
 
-    <a class="item item-thumbnail-left" href="#">
-      <img src="{{p.metadados.imagem1_grupo1}}">
-      <h2>{{p.metadados.titulo1_grupo1}}</h2>
-      <p>{{p.metadados.texto1_grupo1}}</p>
-    </a>
-    
-    <a class="item item-thumbnail-right" href="#">
-      <img src="{{p.metadados.imagem1_grupo1}}">
-      <h2>{{p.metadados.titulo1_grupo1}}</h2>
-      <p>{{p.metadados.texto1_grupo1}}</p>
-    </a>
+    <h1>{{p.metadados.titulo_texto}}</h1>
 
-</div>
+    <h1>{{p.metadados.texto1}}</h1>
 
-<div style="float: left">
-    <h3 id="autorComportamento">{{p.metadados.nome_grupo1}}</h3>
-    <div style="float: left">
-        <h3>{{p.metadados.titulo1_grupo1}}</h3>
-        <img class="imagemIndicador" src="{{p.metadados.imagem1_grupo1}}" />
-    </div>
-    <div style="float: left">
-        <h3>{{p.metadados.titulo2_grupo1}}</h3>
-        <img class="imagemIndicador" src="{{p.metadados.imagem2_grupo1}}" />
-    </div>
-</div>
-<div style="float: left">
-    <h3 id="autorComportamento">{{p.metadados.nome_grupo2}}</h3>
+    <h1>{{p.metadados.texto2}}</h1>
 
-</div>
-<div style="float: left">
-    <h3 id="autorComportamento">{{p.metadados.nome_grupo3}}</h3>
+    <h1>{{p.metadados.autor_texto}}</h1>
+
 
 </div>

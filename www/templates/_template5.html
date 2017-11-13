@@ -1,12 +1,18 @@
+<!-- 4 metadados (nome_pagina, titulo_texto, texto, autor_texto) - Nome template: Texto simples sem imagem -->
+
 <div class="list card">
-    <div class="item item-body">
+     <div class="item item-body">
+     
+     <div class="item item-text-wrap">
+           <p>{{p.metadados.nome_pagina}}</p>
+     </div>
         
-        <h2 id="titulo">{{p.desc_template}}</h2>
-        <img class="full-image" src="{{p.metadados.imagem}}" />
+        <h3>{{p.metadados.titulo_texto}}</h3>
         
-        <h3 id="autorComportamento">{{p.metadados.titulo}}</h3>
+        <p>{{p.metadados.texto}}</p>
         
-        <p id="texto" class="item item-text-wrap" ng-bind-html="p.metadados.texto">
+        <h3>{{p.metadados.autor_texto}}</h3>
+        
         </p>
     </div>
 </div>
