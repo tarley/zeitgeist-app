@@ -1,15 +1,5 @@
 /* Empty. Add your own CSS if you like */
 
-.item-text-wrap p {
-    text-align: justify;
-    margin: 0;
-    font-size:16px;
-}
-
-.item-text-wrap{
-    margin-bottom: 35px;
-}
-
 p,
 h1,
 h2,
@@ -25,29 +15,51 @@ h6 {
     text-align: right;
 }
 
+
+/*====================================== CSS PADRÃO PARA TODOS ==========================================*/
+
 .no-padding {
     padding: 0 !important;
 }
 
-#subtitulo {
-    font-size: small;
-    text-align: right;
+.logotipo span.right-buttons {
+    display: flex;
+    justify-content: space-around;
 }
 
-.autor {
-    text-align: right;
-    margin: 10px 15px 10px 10px !important;
+.zeitgeist {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-#texto {
-    font-size: small;
+.zeitgeist img {
+    width: 40%;
+}
+
+.menu-app,
+.menu-app .bar .title.title-left {
+    text-align: center
+}
+
+.itens-menu a {
+    padding: 10px 0 !important;
 }
 
 .titulo {
-    font-size: 18px;
+    font-size: 24px;
     font-family: arial;
     text-align: center;
     text-transform: uppercase;
+    padding: 0 16px;
+}
+
+.titulo-texto {
+    font-size: 20px;
+    font-family: arial;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0 16px;
 }
 
 .capa-informacao p {
@@ -58,23 +70,174 @@ h6 {
     padding: 5px 0;
 }
 
-#autorComportamento {
-    font-size: 10pt;
+.autor {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0 16px;
+    font-size: 14px;
+}
+
+.conteudo-texto {
+    line-height: 22px;
+    letter-spacing: -1px;
+    border: 0;
+    text-align: justify;
+    margin: 0;
+}
+
+.conteudo-texto p {
+    text-indent: 30px;
+    font-size: 18px;
+}
+
+.desc_autor {
+    padding: 0 16px;
+    margin: 0 !important;
+    margin-bottom: 30px !important;
     text-align: left;
 }
 
-#descricaoAutorComportamento {
-    font-size: 7pt;
-    text-align: left;
+/*========================= CSS DO TEMPLATE TEXTO SIMPLES COM IMAGEM ===========================*/
+
+.texto-simples-com-imagem .titulo {
+    margin-bottom: 0;
 }
 
-#tituloTexto {
-    font-size: large;
+.texto-simples-com-imagem .conteudo-texto {
+    padding-top: 0;
+}
+
+.texto-simples-com-imagem .autor {
+    margin-bottom: 30px !important;
+    margin-top: 0 !important;
+}
+
+
+/*========================= CSS DO TEMPLATE TEXTO SIMPLES SEM IMAGEM ===========================*/
+
+.texto-simples-sem-imagem .conteudo-texto {
+    padding-top: 0;
+    padding-bottom: 30px;
+}
+
+
+/*========================= GRUPOS DE TEXTO E FOTOS ===========================*/
+
+.grupos-de-texto-e-fotos .titulo {
     text-align: left;
+    margin: 0 !important;
+    padding: 0 12px !important;
+}
+
+.grupos-de-texto-e-fotos .titulo-indicador {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+
+.grupos-de-texto-e-fotos .indicador {
+    display: flex;
+    font-size: 22px;
+    border-right: 1px solid #000;
+    width: 45%;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.grupos-de-texto-e-fotos .indicador-autor {
+    display: flex;
+    font-size: 14px;
+    align-content: center;
+    width: 55%;
+    justify-content: space-around;
+}
+
+.grupos-de-texto-e-fotos .grupo-indicador a {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+}
+
+.grupos-de-texto-e-fotos .conteudo-esqueda,
+.grupos-de-texto-e-fotos .conteudo-direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 75% !important;
+}
+
+.grupos-de-texto-e-fotos .imagem-direita,
+.grupos-de-texto-e-fotos .imagem-esqueda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 25% !important;
+}
+
+.grupos-de-texto-e-fotos .conteudo-esqueda .texto-grupo,
+.grupos-de-texto-e-fotos .conteudo-direita .texto-grupo {
+    font-size: 14px !important;
+    text-indent: 0 !important;
+    line-height: 12px !important;
+    margin-top: 0 !important;
+}
+
+.grupos-de-texto-e-fotos .conteudo-esqueda .texto-grupo {
+    margin-right: 10px;
+}
+
+.grupos-de-texto-e-fotos .conteudo-direita .texto-grupo {
+    margin-left: 10px;
+}
+
+.grupos-de-texto-e-fotos .conteudo-direita .titulo-grupo,
+.grupos-de-texto-e-fotos .conteudo-esqueda .titulo-grupo {
+    font-size: 16px !important;
     text-transform: uppercase;
+    letter-spacing: 0px;
 }
 
-.imagemIndicador {
-    float: right !important;
-    height: 123px !important;
+.grupos-de-texto-e-fotos .conteudo-esqueda .titulo-grupo {
+    margin: 0 10px 0 0 !important;
+}
+
+.grupos-de-texto-e-fotos .conteudo-direita .titulo-grupo {
+    margin: 0 0 0 10px !important;
+}
+
+.grupos-de-texto-e-fotos .item.conteudo-texto {
+    padding: 5px 12px !important;
+}
+
+.grupos-de-texto-e-fotos .categoria-grupo {
+    margin-bottom: 10px;
+}
+
+.grupos-de-texto-e-fotos h2.titulo-rodape {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.grupos-de-texto-e-fotos p.texto-rodape {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 14px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+/*========================= GRUPOS DE TEXTO E FOTOS ===========================*/
+
+.texto-simples-com-imagem-e-detalhamento-de-autor .autor{
+    margin: 0;
+    text-align: left !important;
+}
+
+.texto-simples-com-imagem-e-detalhamento-de-autor .conteudo-texto p {
+    margin: 0 !important;
 }

@@ -1,12 +1,9 @@
-<div class="list card">
-    <div class="item item-body">
-        
-        <h2 id="titulo">{{p.desc_template}}</h2>
+<div class="texto-livre-com-imagem">
+    <div class="item-body no-padding">
+        <h2 class="titulo" ng-bind-html="p.metadados.nome_pagina"></h2>
         <img class="full-image" src="{{p.metadados.imagem}}" />
-        
-        <h3 id="autorComportamento">{{p.metadados.titulo}}</h3>
-        
-        <p id="texto" class="item item-text-wrap" ng-bind-html="p.metadados.texto">
-        </p>
+        <div class="item item-text-wrap conteudo-texto">
+            <p ng-bind-html="p.metadados.texto"></p>
+        </div>
     </div>
 </div>

@@ -1,42 +1,90 @@
+<div class="grupos-de-texto-e-fotos">
+    <div class="item-body no-padding">
 
+        <div class="titulo-indicador">
+            <h2 class="indicador" ng-bind-html="p.metadados.nome_pagina"></h2>
+            <p class="indicador-autor" ng-bind-html="p.metadados.autor"></p>
+        </div>
+        <div class="categoria-grupo">
+            <p class="titulo" ng-bind-html="p.metadados.grupo1"></p>
+            <div class="grupo-indicador">
+                <a class="item conteudo-texto" href="#">
+                    <div class="conteudo-esqueda">
+                        <h2 class="titulo-grupo" ng-bind-html="p.metadados.grupo1_titulo1"></h2>
+                        <p class="texto-grupo" ng-bind-html="p.metadados.grupo1_titulo1_texto1"></p>
+                    </div>
+                    <div class="imagem-direita">
+                        <img src="{{p.metadados.grupo1_titulo1_imagem1}}">
+                    </div>
+                </a>
+            </div>
+            <div class="grupo-indicador">
+                <a class="item conteudo-texto" href="#">
+                    <div class="imagem-esqueda">
+                        <img src="{{p.metadados.grupo1_titulo2_imagem2}}">
+                    </div>
+                    <div class="conteudo-direita">
+                        <h2 class="titulo-grupo" ng-bind-html="p.metadados.grupo1_titulo2"></h2>
+                        <p class="texto-grupo" ng-bind-html="p.metadados.grupo1_titulo2_texto2"></p>
+                    </div>
+                </a>
+            </div>
+        </div>
 
+        <div class="categoria-grupo">
+            <p class="titulo" ng-bind-html="p.metadados.grupo2"></p>
+            <div class="grupo-indicador">
+                <a class="item conteudo-texto" href="#">
+                    <div class="conteudo-esqueda">
+                        <h2 class="titulo-grupo" ng-bind-html="p.metadados.grupo2_titulo1"></h2>
+                        <p class="texto-grupo" ng-bind-html="p.metadados.grupo2_titulo1_texto1"></p>
+                    </div>
+                    <div class="imagem-direita">
+                        <img src="{{p.metadados.grupo2_titulo1_imagem1}}">
+                    </div>
+                </a>
+            </div>
+            <div class="grupo-indicador">
+                <a class="item conteudo-texto" href="#">
+                    <div class="imagem-esqueda">
+                        <img src="{{p.metadados.grupo2_titulo2_imagem2}}">
+                    </div>
+                    <div class="conteudo-direita">
+                        <h2 class="titulo-grupo" ng-bind-html="p.metadados.grupo2_titulo2"></h2>
+                        <p class="texto-grupo" ng-bind-html="p.metadados.grupo2_titulo2_texto2"></p>
+                    </div>
+                </a>
+            </div>
+        </div>
 
-<div class="item item-body">
-    <h2 class="titulo">{{p.desc_template}}</h2>
-</div>
+        <div class="categoria-grupo">
+            <p class="titulo" ng-bind-html="p.metadados.grupo3"></p>
+            <div class="grupo-indicador">
+                <a class="item conteudo-texto" href="#">
+                    <div class="conteudo-esqueda">
+                        <h2 class="titulo-grupo" ng-bind-html="p.metadados.grupo3_titulo1"></h2>
+                        <p class="texto-grupo" ng-bind-html="p.metadados.grupo3_titulo1_texto1"></p>
+                    </div>
+                    <div class="imagem-direita">
+                        <img src="{{p.metadados.grupo3_titulo1_imagem1}}">
+                    </div>
+                </a>
+            </div>
+            <div class="grupo-indicador">
+                <a class="item conteudo-texto" href="#">
+                    <div class="imagem-esqueda">
+                        <img src="{{p.metadados.grupo3_titulo2_imagem2}}">
+                    </div>
+                    <div class="conteudo-direita">
+                        <h2 class="titulo-grupo" ng-bind-html="p.metadados.grupo3_titulo2"></h2>
+                        <p class="texto-grupo" ng-bind-html="p.metadados.grupo3_titulo2_texto2"></p>
+                    </div>
+                </a>
+            </div>
+        </div>
 
-<div class="list">
+        <h2 class="titulo-rodape" ng-bind-html="p.metadados.titulo_rodape"></h2>
+        <p class="texto-rodape padding" ng-bind-html="p.metadados.texto_rodape"></p>
 
-    <a class="item item-thumbnail-left" href="#">
-      <img src="{{p.metadados.imagem1_grupo1}}">
-      <h2>{{p.metadados.titulo1_grupo1}}</h2>
-      <p>{{p.metadados.texto1_grupo1}}</p>
-    </a>
-    
-    <a class="item item-thumbnail-right" href="#">
-      <img src="{{p.metadados.imagem1_grupo1}}">
-      <h2>{{p.metadados.titulo1_grupo1}}</h2>
-      <p>{{p.metadados.texto1_grupo1}}</p>
-    </a>
-
-</div>
-
-<div style="float: left">
-    <h3 id="autorComportamento">{{p.metadados.nome_grupo1}}</h3>
-    <div style="float: left">
-        <h3>{{p.metadados.titulo1_grupo1}}</h3>
-        <img class="imagemIndicador" src="{{p.metadados.imagem1_grupo1}}" />
     </div>
-    <div style="float: left">
-        <h3>{{p.metadados.titulo2_grupo1}}</h3>
-        <img class="imagemIndicador" src="{{p.metadados.imagem2_grupo1}}" />
-    </div>
-</div>
-<div style="float: left">
-    <h3 id="autorComportamento">{{p.metadados.nome_grupo2}}</h3>
-
-</div>
-<div style="float: left">
-    <h3 id="autorComportamento">{{p.metadados.nome_grupo3}}</h3>
-
 </div>

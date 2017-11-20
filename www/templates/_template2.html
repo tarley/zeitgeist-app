@@ -1,13 +1,10 @@
-<div class="">
-    <div class="item item-body no-padding">
-        <h2 class="titulo">{{p.desc_template}}</h2>
+<div class="texto-simples-com-imagem">
+    <div class="item-body no-padding">
         <img class="full-image" src="{{p.metadados.imagem}}" />
-
-        <h3 class="autor">
-            {{p.metadados.autor}}
-        </h3>
-        <div class="item item-text-wrap">
-            <p>{{p.metadados.texto}}</p>
+        <h2 class="titulo" ng-bind-html="p.metadados.nome_pagina"></h2>
+        <div class="item item-text-wrap conteudo-texto">
+            <p ng-bind-html="p.metadados.texto"></p>
         </div>
+        <h4 class="autor" ng-bind-html="p.metadados.autor_texto"></h4>
     </div>
 </div>

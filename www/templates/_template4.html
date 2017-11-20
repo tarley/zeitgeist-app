@@ -1,13 +1,17 @@
-<div class="list card">
-    <div class="item item-body">
+<div class="texto-simples-com-imagem-e-detalhamento-de-autor">
+    <div class="item-body no-padding">
         
-        <h2 id="tituloComportamento">{{p.desc_template}}</h2>
-        <h2 id="tituloComportamento">{{p.metadados.titulo_comportamento}}</h2>
+        <img class="full-image" src="{{p.metadados.imagem}}" />
         
-        <div id="texto" class="item item-text-wrap">
-            {{p.metadados.texto_comportamento}}
+        <h2 class="titulo" ng-bind-html="p.metadados.nome_pagina"></h2>
+        
+        <div  class="item item-text-wrap conteudo-texto">
+            <p ng-bind-html="p.metadados.texto"></p>
         </div>
-         <h3 id="autorComportamento">{{p.metadados.autor_comportamento}}</h3>
-        <h3 id="descricaoAutorComportamento">{{p.metadados.descricao_autor_comportamento}}</h3>
+        
+        <h4 class="autor" ng-bind-html="p.metadados.autor_texto"></h4>
+        
+        <p class="desc_autor" ng-bind-html="p.metadados.desc_autor"></p>
+        
     </div>
 </div>
