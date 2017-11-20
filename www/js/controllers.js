@@ -14,9 +14,17 @@ angular.module('starter.controllers', [])
             .success(function(resposta) {
                 console.log(resposta);
                 $scope.jornal = resposta.data;
+                
+                $ionicLoading.hide().then(function(){
+                   console.log("Ocultando o loading");
+                });
             })
             .error(function(data) {
                 console.log(data);
+                
+                $ionicLoading.hide().then(function(){
+                   console.log("Ocultando o loading");
+                });
             });
     }
 });
