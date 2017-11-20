@@ -241,3 +241,7 @@ h6 {
 .texto-simples-com-imagem-e-detalhamento-de-autor .conteudo-texto p {
     margin: 0 !important;
 }
+
+.texto-livre-com-imagem .conteudo-texto{
+    padding-bottom: 35px
+}
