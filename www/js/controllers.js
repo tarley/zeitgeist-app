@@ -7,9 +7,15 @@ angular.module('starter.controllers', [])
     }
 })
 
-.controller('HomeController', function($scope, $http) {
+.controller('HomeController', function($scope, $http, $ionicLoading) {
 
     $scope.init = function() {
+        $ionicLoading.show({
+          template: 'Carregando...'
+        }).then(function(){
+           console.log("Exibindo loading");
+        });
+        
         $http.get("http://www.jornalzeitgeist.com.br/api/jornal/listToApp/", { params: {} })
             .success(function(resposta) {
                 console.log(resposta);
