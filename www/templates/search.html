@@ -1,5 +1,25 @@
-<ion-view view-title="Search">
+<ion-view ng-init="initEndicoes()">
+    <ion-nav-buttons class="logotipo" menuToggle side="right">
+        <div class="zeitgeist">
+            <img src="img/logo.jpg">
+        </div>
+    </ion-nav-buttons>
     <ion-content>
-        <h2>Search</h2>
+        <div ng-repeat="j in jornal.jornal" class="list card">
+            <div class="item item-avatar">
+                <img src="{{j.paginas[0].metadados.imagem}}">
+                <h2>{{j.nom_titulo_jornal}}</h2>
+                <p>Nº edição: {{j.num_edicao_jornal}}</p>
+            </div>
+
+            <div class="item item-body">
+                <img class="full-image" src="{{j.paginas[0].metadados.imagem}}">
+            </div>
+            <div class="item">
+                <button class="button button-outline button-dark" ng-click="butao(j.num_edicao_jornal)">
+                    Veja
+                </button>
+            </div>
+        </div>
     </ion-content>
 </ion-view>

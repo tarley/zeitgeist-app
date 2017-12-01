@@ -1,17 +1,11 @@
-<!-- 4 metadados (nome_pagina, imagem, titulo_texto, texto) - Nome Template: Texto livre com imagem -->
+<div class="expediente">
+    <div class="item-body no-padding">
 
-<div class="list card">
-    <div class="item item-body">
-
-        <h2>{{p.metadados.nome_pagina}}</h2>
-
-        <div class="item item-image">
-            <img src="{{p.metadados.imagem}}" />
+        <h2 class="titulo" ng-bind-html="p.metadados.titulo"></h2>
+        <div class="item item-text-wrap conteudo-texto">
+            <p ng-bind-html="p.metadados.desc_produtores"></p>
+            <p ng-bind-html="p.metadados.contato"></p>
         </div>
-        
-        <h2>{{p.metadados.titulo_texto}}</h2>
-
-        <p>{{p.metadados.texto}}</p>
-
+        <img class="logo-newton" src="{{p.metadados.logo_instituicao}}" />
     </div>
 </div>

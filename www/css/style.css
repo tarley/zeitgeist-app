@@ -15,6 +15,10 @@ h6 {
     text-align: right;
 }
 
+.list:last-child.card {
+    margin-bottom: 0 !important;
+}
+
 
 /*====================================== CSS PADRÃO PARA TODOS ==========================================*/
 
@@ -34,7 +38,7 @@ h6 {
 }
 
 .zeitgeist img {
-    width: 40%;
+    width: 20%
 }
 
 .menu-app,
@@ -97,6 +101,7 @@ h6 {
     text-align: left;
 }
 
+
 /*========================= CSS DO TEMPLATE TEXTO SIMPLES COM IMAGEM ===========================*/
 
 .texto-simples-com-imagem .titulo {
@@ -120,6 +125,14 @@ h6 {
     padding-bottom: 30px;
 }
 
+.texto-simples-sem-imagem .autor {
+    text-align: left;
+}
+
+.texto-simples-sem-imagem .titulo-texto {
+    margin: 0;
+}
+
 
 /*========================= GRUPOS DE TEXTO E FOTOS ===========================*/
 
@@ -138,18 +151,19 @@ h6 {
 
 .grupos-de-texto-e-fotos .indicador {
     display: flex;
-    font-size: 22px;
+    font-size: 26px;
     border-right: 1px solid #000;
-    width: 45%;
+    width: 50%;
     align-content: center;
     justify-content: space-around;
 }
 
 .grupos-de-texto-e-fotos .indicador-autor {
     display: flex;
-    font-size: 14px;
+    font-size: 16px;
     align-content: center;
-    width: 55%;
+    width: 50%;
+    margin-left: 15px;
     justify-content: space-around;
 }
 
@@ -180,9 +194,10 @@ h6 {
 
 .grupos-de-texto-e-fotos .conteudo-esqueda .texto-grupo,
 .grupos-de-texto-e-fotos .conteudo-direita .texto-grupo {
-    font-size: 14px !important;
+    font-size: 18px !important;
     text-indent: 0 !important;
-    line-height: 12px !important;
+    line-height: 22px;
+    letter-spacing: -1px;
     margin-top: 0 !important;
 }
 
@@ -196,7 +211,7 @@ h6 {
 
 .grupos-de-texto-e-fotos .conteudo-direita .titulo-grupo,
 .grupos-de-texto-e-fotos .conteudo-esqueda .titulo-grupo {
-    font-size: 16px !important;
+    font-size: 20px !important;
     text-transform: uppercase;
     letter-spacing: 0px;
 }
@@ -219,25 +234,67 @@ h6 {
 
 .grupos-de-texto-e-fotos h2.titulo-rodape {
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 0;
+    line-height: 22px;
+    letter-spacing: -1px;
 }
 
 .grupos-de-texto-e-fotos p.texto-rodape {
-    font-size: 14px;
+    font-size: 18px;
     text-align: justify;
-    line-height: 14px;
-    margin-top: 0px;
+    line-height: 18px;
+    margin-top: 15px;
     margin-bottom: 25px;
+    line-height: 22px;
+    letter-spacing: -1px;
+    text-indent: 0 !important;
 }
+
 
 /*========================= GRUPOS DE TEXTO E FOTOS ===========================*/
 
-.texto-simples-com-imagem-e-detalhamento-de-autor .autor{
+.texto-simples-com-imagem-e-detalhamento-de-autor .autor {
     margin: 0;
     text-align: left !important;
 }
 
 .texto-simples-com-imagem-e-detalhamento-de-autor .conteudo-texto p {
+    margin: 0 !important;
+}
+
+
+/*========================= TEXTO DUPLO SEM IMAGEM ===========================*/
+
+.texto-duplo-sem-imagem .conteudo-texto {
+    padding-bottom: 35px;
+}
+
+.texto-duplo-sem-imagem .conteudo-texto {
+    padding-top: 0 !important;
+}
+
+.texto-duplo-sem-imagem .autor {
+    padding-top: 0 !important;
+}
+
+
+/*========================= EXPEDIENTE ===========================*/
+
+.expediente .logo-newton {
+    position: absolute;
+    bottom: 30px;
+    width: 50%;
+    left: 50%;
+    margin-left: -77px;
+}
+
+.expediente .titulo {
+    margin-bottom: 0 !important;
+}
+
+.expediente .conteudo-texto p {
+    text-indent: 0 !important;
+    font-size: 16px !important;
     margin: 0 !important;
 }
