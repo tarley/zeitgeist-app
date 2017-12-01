@@ -263,7 +263,9 @@ h6 {
     margin: 0 !important;
 }
 
-
+.texto-livre-com-imagem .conteudo-texto{
+    padding-bottom: 35px
+}
 /*========================= TEXTO DUPLO SEM IMAGEM ===========================*/
 
 .texto-duplo-sem-imagem .conteudo-texto {
