@@ -1,12 +1,11 @@
 <ion-view view-title="" ng-init="init()">
-    <ion-nav-buttons class="logotipo" menuToggle side="right">
-        <div class="zeitgeist">
-            <img src="img/logo.jpg">
-        </div>
-    </ion-nav-buttons>
+    <ion-nav-title>
+        <img src="img/logo.png" class="header-logo">
+    </ion-nav-title>
     <ion-slides options="options" slider="data.slider">
         <ion-slide-page ng-repeat="p in jornal.paginas">
             <ion-content>
+                <ion-refresher pulling-text="Puxe para atualizar..." on-refresh="doRefresh()"></ion-refresher>
                 <div ng-if="p.desc_template == 'Somente imagem'" ng-include src="'templates/_template1.html'"></div>
                 <div ng-if="p.desc_template == 'Texto simples com imagem'" ng-include src="'templates/_template2.html'"></div>
                 <div ng-if="p.desc_template == 'Texto simples sem imagem'" ng-include src="'templates/_template3.html'"></div>

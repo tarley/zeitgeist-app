@@ -1,24 +1,18 @@
-<ion-view ng-init="initEndicoes()">
-    <ion-nav-buttons class="logotipo" menuToggle side="right">
-        <div class="zeitgeist">
-            <img src="img/logo.jpg">
-        </div>
-    </ion-nav-buttons>
+<ion-view ng-init="initEdicoes()">
+    <ion-nav-title>
+        <img src="img/logo.png" class="header-logo">
+    </ion-nav-title>
     <ion-content>
-        <div ng-repeat="j in jornal.jornal" class="list card">
+      <ion-refresher pulling-text="Puxe para atualizar..." on-refresh="doRefresh()">
+      </ion-refresher>
+        <div ng-repeat="jornal in listaJornal" class="list card">
             <div class="item item-avatar">
-                <img src="{{j.paginas[0].metadados.imagem}}">
-                <h2>{{j.nom_titulo_jornal}}</h2>
-                <p>Nº edição: {{j.num_edicao_jornal}}</p>
+                <img src="{{jornal.paginas[0].metadados.imagem}}">
+                <h2>{{jornal.nom_titulo_jornal}}</h2>
+                <p>Nº edição: {{jornal.num_edicao_jornal}}</p>
             </div>
-
             <div class="item item-body">
-                <img class="full-image" src="{{j.paginas[0].metadados.imagem}}">
-            </div>
-            <div class="item">
-                <button class="button button-outline button-dark" ng-click="butao(j.num_edicao_jornal)">
-                    Veja
-                </button>
+                <img class="full-image" src="{{jornal.paginas[0].metadados.imagem}}" ng-click="vizualizarEdicao(jornal.num_edicao_jornal)">
             </div>
         </div>
     </ion-content>
