@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="br.newtonpaiva" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="br.eti.tarley.zeitgeist" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Jornal Zeitgeist</name>
-    <description>Jornal Zeitgeist</description>
-    <author email="igorsoaresassis@hotmail.com" href="">Zeitgeist</author>
+    <description>Jornal do curso de Psicologia da Newton Paiva</description>
+    <author email="tarley.lana@gmail.com" href="http://www.jornalzeitgeist.com.br/#!/team">Alunos de SI da Newton Paiva</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="http://ionic.local/*" />
